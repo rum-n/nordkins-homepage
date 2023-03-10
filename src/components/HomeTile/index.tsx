@@ -11,7 +11,7 @@ const HomeTile = () => {
         We deliver the digital experience you need
       </div>
       <div className={classes.cta}>
-        Have a project in mind? We'd love to chat!
+        Have a project in mind? We&apos;d love to chat!
       </div>
       <button className={classes.ctaBtn}>Say hi</button>
     </div>
