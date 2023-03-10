@@ -10,6 +10,10 @@ const HomeTile = () => {
       <div className={classes.title}>
         We deliver the digital experience you need
       </div>
+      <div className={classes.cta}>
+        Have a project in mind? We'd love to chat!
+      </div>
+      <button className={classes.ctaBtn}>Say hi</button>
     </div>
   );
 };
@@ -26,14 +30,41 @@ const useStyles = createUseStyles({
   },
   logo: {
     margin: "2rem",
-    fontFamily: "Impact, Charcoal, sans-serif",
-    fontSize: "2rem",
+    fontFamily: "Bebas Neue, sans-serif",
+    fontSize: "3rem",
   },
   title: {
     width: "70%",
-    fontFamily: "Impact, Charcoal, sans-serif",
-    fontSize: "4rem",
+    fontFamily: "Bebas Neue, sans-serif",
+    fontSize: "5rem",
+    lineHeight: "4.5rem",
     margin: "3rem 0 2rem 4rem",
+    color: "#bbe1fa",
+  },
+  cta: {
+    width: "70%",
+    margin: "3rem 0 2rem 4rem",
+    fontSize: "1.5rem",
+    fontFamily: "sans-serif",
+    color: "#fff",
+  },
+  ctaBtn: {
+    margin: "0 4rem",
+    width: "20%",
+    height: "3rem",
+    fontFamily: "Bebas Neue, sans-serif",
+    fontSize: "1.5rem",
+    borderRadius: "0.6rem",
+    border: "none",
+    cursor: "pointer",
+    transition: "0.3s",
+    color: "#bbe1fa",
+    backgroundColor: "#1b262c",
+    "&:hover": {
+      transition: "0.3s",
+      backgroundColor: "#0f4c75",
+      boxShadow: "0.2rem 0.2rem 0 0.2rem #bbe1fa",
+    },
   },
 });
 
